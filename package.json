@@ -29,12 +29,8 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-<<<<<<< HEAD
     "css-loader": "^3.3.2",
     "eslint": "^3.19.0",
-=======
-    "eslint": "^4.18.2",
->>>>>>> adc73b02308233a079a05a5f69451b7158f96f8d
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
