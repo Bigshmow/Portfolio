@@ -2,11 +2,20 @@ import style from './style';
 
 const s = Object.create(style);
 
+// Brand Colors
+// #209CEE - main big blue
+// #09121D - 1st text
+// #0E476E - secondary deep blue
+// #11BBD6 - hover
+// #ED981F - button/accent
+// #A15F00 - tertiary/accent
+// #F2FEFF - Background && 2nd text
+
 s.root = {
   fontFamily: 'Gill Sans, sans-serif',
   fontWeight: '300',
   fontSize: '16px',
-  backgroundColor: 'white'
+  backgroundColor: '#F2FEFF'
   // letterSpacing: '0.025em',
   // padding: '3vh 0 12vh 0',
   // width: '500px',
@@ -33,27 +42,8 @@ s.root = {
 };
 
 s.dashboard = {
-  color: 'black',
-  backgroundColor: 'white'
-}
-
-s.title = {
-  fontSize: '20px',
-  marginBottom: '0.5vh',
-};
-
-s.repoLink = {
-  fontSize: '14px',
-};
-
-s.breadcrumbs = {
-  margin: '3vh 0',
-};
-
-s.creditLine = {
-  color: '#A0A0A0',
-  fontSize: '14px',
-  marginTop: '50px',
+  color: '#09121D',
+  backgroundColor: '#F2FEFF'
 };
 
 export default s;

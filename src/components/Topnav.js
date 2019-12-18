@@ -18,7 +18,7 @@ export const Topnav = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Devin Stewart</NavbarBrand>
+        <NavbarBrand href="/">{'< DS >'}</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
