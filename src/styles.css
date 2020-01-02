@@ -1,4 +1,16 @@
-body {
-    color: white;
-    background-color: black;
+  .hiddenBig {
+    display: none;
+  }
+
+  @media screen and (max-width:450px){
+
+    .hiddenBig {
+      display: inherit;
+    }
+
+    .hiddenMedia {
+      display: none;
+      color: '#F2FEFF'
+    }
+    
   }

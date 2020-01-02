@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText
-} from 'reactstrap';
+import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink} from 'reactstrap';
+import s from '../styles/app.style';
+import '../styles.css';
+
 
 export const Topnav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +10,8 @@ export const Topnav = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+    <div style={s.topnav}>
+      <Navbar className='shadow' light expand="md">
         <NavbarBrand href="/">{'< DS >'}</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -26,7 +20,7 @@ export const Topnav = (props) => {
               <NavLink href="/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/portfolio">Portfolio</NavLink>
+              <NavLink href="/works">Portfolio</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/resume">Resume</NavLink>
@@ -35,14 +29,11 @@ export const Topnav = (props) => {
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
-            <NavItem>
-              <NavLink href="https://www.linkedin.com/in/devin-stewart-7697bb9b/" className="fa fa-linkedin"></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/Bigshmow" className="fa fa-github"></NavLink>
-            </NavItem>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
+        <div className='hiddenBig'>
+              <NavLink href="https://www.linkedin.com/in/stewart-devin/" className="fa fa-3x fa-linkedin"></NavLink>
+              <NavLink href="https://github.com/Bigshmow" className="fa fa-3x fa-github"></NavLink>
+        </div>
       </Navbar>
     </div>
   );

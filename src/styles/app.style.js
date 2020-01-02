@@ -2,6 +2,8 @@ import style from './style';
 
 const s = Object.create(style);
 
+const mq = window.matchMedia('(max-width:450px)');
+
 // Brand Colors
 // #209CEE - main big blue
 // #09121D - 1st text
@@ -11,39 +13,66 @@ const s = Object.create(style);
 // #A15F00 - tertiary/accent
 // #F2FEFF - Background && 2nd text
 
-s.root = {
-  fontFamily: 'Gill Sans, sans-serif',
-  fontWeight: '300',
-  fontSize: '16px',
-  backgroundColor: '#F2FEFF'
-  // letterSpacing: '0.025em',
-  // padding: '3vh 0 12vh 0',
-  // width: '500px',
-  // // use responsive max-width to simulate padding/margin to allow
-  // // space for vertical scroll bar without creating horizontal scroll bar
-  // // (if there is padding, the window will scroll horizontally to show the padding)
-  // maxWidth: 'calc(100vw - 40px)',
+const handleMedia = (mq) => {
 
-  // center based on vw to prevent content jump when vertical scroll bar show/hide
-  // note: vw/vh include the width of scroll bars. Note that centering using margin auto
-  // or % (which doesn't include scroll bars, so changes when scroll bars shown) causes a page jump
-  // position: 'relative',
-  // left: '50vw',
-  // WebkitTransform: 'translate(-50%, 0)',
-  // MozTransform: 'translate(-50%, 0)',
-  // msTransform: 'translate(-50%, 0)',
-  // OTransform: 'translate(-50%, 0)',
-  // transform: 'translate(-50%, 0)',
-
-  // WebkitTextSizeAdjust: 'none',
-  // MozTextSizeAdjust: 'none',
-  // msTextSizeAdjust: 'none',
-  // textSizeAdjust: 'none',
+  if (mq.matches){   
+    s.slide = {
+      position: 'static',
+      background: '#F2FEFF',
+      color: '#09121D',
+      fontFamily: 'Gill Sans, sans-serif',
+      fontSize: '16px',
+      fontWeight: '300',
+      background: '#F2FEFF',
+      zIndex: '0',
+      marginLeft: '0px'
+    }
+    s.sidebar = {
+      zIndex: '-1'
+    }
+    s.topnav = {
+      zIndex: '0',
+      position: 'sticky',
+      marginLeft: '0px'
+    }
+  } else {
+    s.slide = {
+      position: 'static',
+      background: '#F2FEFF',
+      color: '#09121D',
+      fontFamily: 'Gill Sans, sans-serif',
+      fontSize: '16px',
+      fontWeight: '300',
+      background: '#F2FEFF',
+      zIndex: '0',
+      marginLeft: '80px'
+    };
+  }
+}
+  
+s.sidebar = {
+  position: 'fixed',
+  height: '100%',
+  width: '80px',
+  top: '0',
+  left: '0',
+  background: '#F2FEFF',
+  overflowX: 'hidden', /* Disable horizontal scroll */
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  zIndex: '2'
 };
 
-s.dashboard = {
-  color: '#09121D',
-  backgroundColor: '#F2FEFF'
-};
+s.topnav = {
+  position: 'sticky',
+  top: '0',
+  background: '#F2FEFF',
+  marginBottom: '32px',
+  marginLeft: '-80px',
+  zIndex: '5'
+}
+
+handleMedia(mq);
 
 export default s;
