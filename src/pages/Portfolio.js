@@ -18,10 +18,10 @@ export const Portfolio = (props) => {
         git = {Projects[random].git}
         desc = {Projects[random].desc}
         >
-        </Projectcard>
           <button onClick={() => setRandom (Math.floor(Math.random() * Projects.length))}>
             Find another project
           </button>
+        </Projectcard>
       </Fragment>
         )
       };

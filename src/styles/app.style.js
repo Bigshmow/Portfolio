@@ -15,7 +15,10 @@ const mq = window.matchMedia('(max-width:450px)');
 
 const handleMedia = (mq) => {
 
-  if (mq.matches){   
+  if (mq.matches){ 
+    
+    // mobile rules
+
     s.slide = {
       position: 'static',
       background: '#F2FEFF',
@@ -34,9 +37,13 @@ const handleMedia = (mq) => {
       zIndex: '0',
       position: 'sticky',
       marginBottom: '32px',
+      marginRight: '-80px',
       marginLeft: '0px'
     }
   } else {
+
+    // desktop rules
+
     s.slide = {
       position: 'static',
       background: '#F2FEFF',
@@ -46,32 +53,33 @@ const handleMedia = (mq) => {
       fontWeight: '300',
       background: '#F2FEFF',
       zIndex: '0',
-      marginLeft: '80px'
+      marginLeft: '80px',
+      marginRight: '-60px'
     };
+      
+      s.sidebar = {
+        position: 'fixed',
+        height: '100%',
+        width: '80px',
+        top: '0',
+        left: '0',
+        background: '#F2FEFF',
+        overflowX: 'hidden', /* Disable horizontal scroll */
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        zIndex: '2'
+      };
+      
+      s.topnav = {
+        position: 'sticky',
+        top: '0',
+        background: '#F2FEFF',
+        marginBottom: '32px',
+        marginLeft: '-80px',
+        zIndex: '5'
+      }
   }
-}
-  
-s.sidebar = {
-  position: 'fixed',
-  height: '100%',
-  width: '80px',
-  top: '0',
-  left: '0',
-  background: '#F2FEFF',
-  overflowX: 'hidden', /* Disable horizontal scroll */
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  zIndex: '2'
-};
-
-s.topnav = {
-  position: 'sticky',
-  top: '0',
-  background: '#F2FEFF',
-  marginBottom: '32px',
-  marginLeft: '-80px',
-  zIndex: '5'
 }
 
 handleMedia(mq);

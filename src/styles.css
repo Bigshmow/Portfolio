@@ -1,9 +1,6 @@
 .caroDiv {
   height: 350px;
   width: 350px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .hiddenBig {
@@ -20,20 +17,10 @@
     width: 250px;
   }
 
-  /* .profileDiv {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  /* } */
-
   @media screen and (max-width:450px){
 
     .hiddenBig {
       display: inherit;
-    }
-    
-    .profile {
-      margin-left: -10px;
     }
 
     .hiddenMedia {
