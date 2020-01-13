@@ -16,7 +16,7 @@ export const Dashboard = props => {
       <Row>
       <Col xs='12' md='5' className='d-flex justify-content-center align-items-center profile'>
         <div className='d-flex justify-content-center'>
-          <img className='profile' src='../../circle_profile.png' alt='ProfilePicture' />
+          <img className='profile' src='circle_profile.png' alt='ProfilePicture' />
         </div>
       </Col>
       <Col xs='12' md='5' className='d-flex justify-content-center align-items-center'>
