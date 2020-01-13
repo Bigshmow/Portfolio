@@ -1,11 +1,39 @@
-  .hiddenBig {
+.caroDiv {
+  height: 350px;
+  width: 350px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.hiddenBig {
     display: none;
   }
+
+  .profile {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .projectImg {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* .profileDiv {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  /* } */
 
   @media screen and (max-width:450px){
 
     .hiddenBig {
       display: inherit;
+    }
+    
+    .profile {
+      margin-left: -10px;
     }
 
     .hiddenMedia {

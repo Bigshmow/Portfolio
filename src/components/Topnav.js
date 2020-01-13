@@ -13,6 +13,7 @@ export const Topnav = (props) => {
     <div style={s.topnav}>
       <Navbar className='shadow' light expand="md">
         <NavbarBrand href="/">{'< DS >'}</NavbarBrand>
+        <div className=''>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -30,6 +31,7 @@ export const Topnav = (props) => {
             </NavItem>
           </Nav>
         </Collapse>
+        </div>
         <div className='hiddenBig'>
               <NavLink href="https://www.linkedin.com/in/stewart-devin/" className="fa fa-3x fa-linkedin"></NavLink>
               <NavLink href="https://github.com/Bigshmow" className="fa fa-3x fa-github"></NavLink>

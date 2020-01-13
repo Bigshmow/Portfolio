@@ -33,6 +33,7 @@ const handleMedia = (mq) => {
     s.topnav = {
       zIndex: '0',
       position: 'sticky',
+      marginBottom: '32px',
       marginLeft: '0px'
     }
   } else {
