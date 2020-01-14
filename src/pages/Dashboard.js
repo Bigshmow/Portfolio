@@ -20,7 +20,7 @@ export const Dashboard = props => {
             </div>
           </Col>
           <Col xs='12' md='5' className='d-flex justify-content-center align-items-center'>
-            <div className='text-center hiddenMedia'>
+            <div className='text-right hiddenMedia'>
               <h1>Hello!</h1>
               <p>You've reached the portfolio page for Devin Stewart.</p>
               <p>MERN stack developer seeking a junior engineer position.</p>
