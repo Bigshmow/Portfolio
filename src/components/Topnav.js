@@ -12,7 +12,7 @@ export const Topnav = (props) => {
   return (
     <div style={s.topnav}>
       <Navbar className='shadow' light expand="md">
-        <NavbarBrand href="/">{'< DS >'}</NavbarBrand>
+        <NavbarBrand href="/Portfolio">{'< DS >'}</NavbarBrand>
         <div className=''>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
