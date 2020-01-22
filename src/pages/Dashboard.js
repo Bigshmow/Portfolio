@@ -19,30 +19,31 @@ export const Dashboard = props => {
               <img className='profile' src='circle_profile.png' alt='ProfilePicture' />
             </div>
           </Col>
-          <Col xs='12' md='5' className='d-flex justify-content-center align-items-center'>
+          <Col xs='12' md='6' className='d-flex justify-content-center align-items-center'>
             <div className='text-right hiddenMedia'>
               <h1>Hello!</h1>
               <p>You've reached the portfolio page for Devin Stewart.</p>
               <p>MERN stack developer seeking a junior engineer position.</p>
-              <i>(part-time mountainbiker and avid gamer too)</i>
+              <i>(part-time mountainbiker and avid gamer)</i>
             </div>
           </Col>
         </Row>
+        <br></br>
         <Row>
-          <Col xs='12' className='d-flex justify-content-center align-items-center'>
-            <About />
-          </Col>
+            <Col xs='12' md='12' className=''>
+              <Portfolio />
+            </Col>
+        </Row>            
+        <Row>
+            <Col xs='12' md='12' className=''>
+              <Resume />
+            </Col>
         </Row>
         <Row>
-          <Col xs='12' className='d-flex justify-content-center'>
-
-          </Col>
+            <Col xs='12' md='12' className=''>
+              <Contact />
+            </Col>
         </Row>
-          <Col xs='12' className='d-flex justify-content-center'>
-            <Portfolio />
-          </Col>
-            <Resume />
-            <Contact />
       </Container>
     </div>
   );

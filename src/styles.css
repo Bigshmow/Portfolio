@@ -13,8 +13,8 @@
   }
 
   .projectImg {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 350px;
   }
 
   @media screen and (max-width:450px){

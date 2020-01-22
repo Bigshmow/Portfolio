@@ -3,10 +3,10 @@ import { Card } from 'reactstrap';
 import s from '../styles/app.style';
 
 export const Resume = props => (
-  <div>
+  <Fragment>
     <Card>
       <h1>Resume Page</h1>
     </Card>
-  </div>
+  </Fragment>
     )
 ;
