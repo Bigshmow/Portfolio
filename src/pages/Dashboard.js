@@ -13,13 +13,11 @@ export const Dashboard = props => {
 
     <div>
       <Container>
-        <Row>
+        <Row className="main">
           <Col xs='12' md='5' className='profile'>
-            <div className='d-flex justify-content-center'>
               <img className='profile' src='circle_profile.png' alt='ProfilePicture' />
-            </div>
           </Col>
-          <Col xs='12' md='6' className='d-flex justify-content-center align-items-center'>
+          <Col xs='12' md='6' className=''>
             <div className='text-right hiddenMedia'>
               <h1>Hello!</h1>
               <p>You've reached the portfolio page for Devin Stewart.</p>
@@ -29,12 +27,12 @@ export const Dashboard = props => {
           </Col>
         </Row>
         <br></br>
-        <Row>
+        <Row className="main">
             <Col xs='12' md='12' className=''>
               <Portfolio />
             </Col>
         </Row>            
-        <Row>
+        {/* <Row>
             <Col xs='12' md='12' className=''>
               <Resume />
             </Col>
@@ -43,7 +41,7 @@ export const Dashboard = props => {
             <Col xs='12' md='12' className=''>
               <Contact />
             </Col>
-        </Row>
+        </Row> */}
       </Container>
     </div>
   );
