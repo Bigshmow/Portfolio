@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-// import { Card } from 'reactstrap';
 import { Card, Container, Row, Col } from 'reactstrap';
 import s from '../styles/app.style';
 import '../styles.css';
