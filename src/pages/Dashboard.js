@@ -32,16 +32,16 @@ export const Dashboard = props => {
               <Portfolio />
             </Col>
         </Row>            
-        {/* <Row>
+        {/* <Row className="main">
             <Col xs='12' md='12' className=''>
               <Resume />
             </Col>
-        </Row>
-        <Row>
+        </Row> */}
+        <Row className="main">
             <Col xs='12' md='12' className=''>
               <Contact />
             </Col>
-        </Row> */}
+        </Row>
       </Container>
     </div>
   );
